@@ -1,4 +1,4 @@
-# TPOV-Seg
+# TPOV-Seg [IEEE TGRS 2025]
 This is a repository for releasing a PyTorch implementation of our work [TPOV-Seg: Textually Enhanced Prompt Tuning of Vision-Language Models for Open-Vocabulary Remote Sensing Semantic Segmentation](https://ieeexplore.ieee.org/document/11215798) accepted for publication in IEEE TGRS.
 
 
