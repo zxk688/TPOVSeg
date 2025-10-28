@@ -29,11 +29,11 @@ pip install -r requirements.txt
 Download the benchmark datasets from public sources, for example:
 
 - Flair: Refer to the [FLAIR](https://ignf.github.io/FLAIR/) 
-- GID15: Refer to the [FLAIR](https://captain-whu.github.io/GID15/) 
-- LOVEDA: Rfefer to the [Loveda](https://github.com/Junjue-Wang/LoveDA)
+- GID15: Refer to the [GID-15](https://captain-whu.github.io/GID15/) 
+- LOVEDA: Refer to the [Loveda](https://github.com/Junjue-Wang/LoveDA)
 - ISPRS Potsdam: Refer to the [Potsdam](https://opendatalab.com/OpenDataLab/ISPRS_Potsdam/)
-- ISPRS Vaihingen: Refer to the [vaihingen](https://opendatalab.com/OpenDataLab/ISPRS_Vaihingen/)
-- WHU building: Refer to the [WHU buidling](https://gpcv.whu.edu.cn/data/building_dataset.html)
+- ISPRS Vaihingen: Refer to the [Vaihingen](https://opendatalab.com/OpenDataLab/ISPRS_Vaihingen/)
+- WHU building: Refer to the [WHU building](https://gpcv.whu.edu.cn/data/building_dataset.html)
 
 
 ### 2. Organize Data Structure
