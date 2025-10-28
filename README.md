@@ -2,7 +2,7 @@
 This is a repository for releasing a PyTorch implementation of our work [TPOV-Seg: Textually Enhanced Prompt Tuning of Vision-Language Models for Open-Vocabulary Remote Sensing Semantic Segmentation](https://ieeexplore.ieee.org/document/11215798) accepted for publication in IEEE TGRS.
 
 
-## Installation
+## ⚙️ Installation
 
 
 ```bash
@@ -23,7 +23,7 @@ pip install -r requirements.txt
 
 ---
 
-## Data Preparation
+## 📂 Data Preparation
 
 ### 1. Download Datasets
 Download the benchmark datasets from public sources, for example:
@@ -72,7 +72,7 @@ datasets
 
 ---
 
-## Training and Testing Examples
+## 🔍 Training and Testing Examples
 
 Run the following commands from the repository root:
 
@@ -96,7 +96,7 @@ python train_net.py \
 
 ---
 
-## Citation
+## 📑 Citation
 
 If you find this repository useful for your research, please cite our paper:
 ```
@@ -113,7 +113,7 @@ If you find this repository useful for your research, please cite our paper:
 }
 ```
 
-## Acknowledgements 
+## 🙏 Acknowledgements 
 This codebase is heavily borrowed from [CAT-Seg](https://github.com/cvlab-kaist/CAT-Seg). We sincerely thank the authors for their valuable efforts.
 
 
