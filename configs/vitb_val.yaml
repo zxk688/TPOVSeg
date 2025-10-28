@@ -1,0 +1,103 @@
+_BASE_: config.yaml
+MODEL:
+  WEIGHTS: ""                                            #weights                                        
+
+  META_ARCHITECTURE: "CATSeg"
+  PIXEL_MEAN: [123.675, 116.280, 103.530]
+  PIXEL_STD: [58.395, 57.120, 57.375]
+  SEM_SEG_HEAD:
+    NAME: "CATSegHead"
+    IN_FEATURES: ["res2", "res3", "res4"]
+    IGNORE_VALUE: 255
+    NUM_CLASSES: 7  #171
+    # TRAIN_CLASS_JSON: "datasets/coco.json"              #171
+    TRAIN_CLASS_JSON: "datasets/loveda.json"              #7
+    # TRAIN_CLASS_JSON: "datasets/potsdam.json"           #6
+    # TRAIN_CLASS_JSON: "datasets/whu.json"               #2
+    # TRAIN_CLASS_JSON: "datasets/amazon.json"            #2
+    # TRAIN_CLASS_JSON: "datasets/glhwater.json"          #2
+    # TRAIN_CLASS_JSON: "datasets/dlrsd.json"             #17
+    # TRAIN_CLASS_JSON: "datasets/gid15.json"             #16
+    # TRAIN_CLASS_JSON: "datasets/flair.json"
+
+    # TEST_CLASS_JSON: "datasets/coco.json"
+    TEST_CLASS_JSON: "datasets/loveda.json"
+    # TEST_CLASS_JSON: "datasets/potsdam.json"
+    # TEST_CLASS_JSON: "datasets/vaihingen.json"
+    # TEST_CLASS_JSON: "datasets/whu.json"
+    # TEST_CLASS_JSON: "datasets/amazon.json"
+    # TEST_CLASS_JSON: "datasets/glhwater.json"
+    # TEST_CLASS_JSON: "datasets/dlrsd.json"
+    # TEST_CLASS_JSON: "datasets/gid15.json"
+    # TEST_CLASS_JSON: "datasets/flair.json"
+
+
+    CLIP_PRETRAINED: "ViT-B/16"
+    PROMPT_DEPTH: 12                                                                             
+    PROMPT_LENGTH: 2
+    TEXT_GUIDANCE_DIM: 512
+    TEXT_GUIDANCE_PROJ_DIM: 128
+    APPEARANCE_GUIDANCE_DIM: 512
+    APPEARANCE_GUIDANCE_PROJ_DIM: 128
+    DECODER_DIMS: [64, 32]
+    DECODER_GUIDANCE_DIMS: [256, 128]
+    DECODER_GUIDANCE_PROJ_DIMS: [32, 16]
+    NUM_LAYERS: 2
+    NUM_HEADS: 4
+    HIDDEN_DIMS: 128
+    POOLING_SIZES: [1, 1]
+    FEATURE_RESOLUTION: [24, 24]
+    WINDOW_SIZES: 12
+    ATTENTION_TYPE: "linear"
+    CLIP_FINETUNE: "attention"                                                                       
+  PROMPT_ENSEMBLE_TYPE: "TTL"                                                            
+
+INPUT:
+  MIN_SIZE_TRAIN: (384, )
+  MIN_SIZE_TRAIN_SAMPLING: "choice"  
+  MIN_SIZE_TEST: 640
+  CROP:
+    ENABLED: True
+    TYPE: "absolute"
+    SIZE: (384, 384)
+  SIZE_DIVISIBILITY: 384 
+  FORMAT: "RGB"
+  DATASET_MAPPER_NAME: "mask_former_semantic"
+DATASETS:
+  # TRAIN: ("coco_2017_train_stuff_all_sem_seg",)
+  TRAIN: ("loveda_urban_train_sem_seg",)
+  # TRAIN: ("loveda_rural_train_sem_seg",)
+  # TRAIN: ("potsdam_train_sem_seg",)
+  # TRAIN: ("whu_train_sem_seg",)
+  # TRAIN: ("vaihingen_train_sem_seg",)
+  # TRAIN: ("glhwater_train_sem_seg",)
+  # TRAIN: ("amazon_train_sem_seg",)
+  # TRAIN: ("dlrsd_train_sem_seg",)
+  # TRAIN: ("gid15_train_sem_seg",)
+  # TRAIN: ("flair19_train_sem_seg",)
+
+  # TEST: ("coco_2017_test_stuff_all_sem_seg",)
+  TEST: ("loveda_urban_test_sem_seg",)
+  # TEST: ("loveda_rural_test_sem_seg",)
+  # TEST: ("potsdam_test_sem_seg",)
+  # TEST: ("whu_test_sem_seg",)
+  # TEST: ("vaihingen_test_sem_seg",)
+  # TEST: ("glhwater_test_sem_seg",)
+  # TEST: ("amazon_test_sem_seg",)
+  # TEST: ("dlrsd_test_sem_seg",)
+  # TEST: ("gid15_test_sem_seg",)
+  # TEST: ("flair19_test_sem_seg",)
+
+SOLVER:
+  IMS_PER_BATCH: 1
+  LR_SCHEDULER_NAME: WarmupCosineLR
+  BASE_LR: 0.0002
+  MAX_ITER: 40000
+  BACKBONE_MULTIPLIER: 0.0
+  CHECKPOINT_PERIOD: 5000
+  CLIP_MULTIPLIER: 0.01
+TEST:
+  EVAL_PERIOD: 2000
+  SLIDING_WINDOW: True
+
+  

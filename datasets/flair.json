@@ -1,0 +1,22 @@
+
+[
+  "building, building, building",
+  "pervious-surface, permeable surface, porous ground", 
+  "impervious-surface, concrete surface, pavement",
+  "bare-soil, exposed earth, uncovered ground",
+  "water, aquatic area, water body",
+  "coniferous, evergreen, needle-leaf trees",
+  "deciduous, broadleaf trees, seasonal trees", 
+  "brushwood, shrubland, scrub",
+  "vineyard, grape cultivation, wine growing area",
+  "herbaceous-vegetation, grasses, soft-stem plants",  
+  "agricultural-land, farmland, cropland",      
+  "plowed-land, tilled soil, cultivated field",          
+  "swimming-pool, pool, artificial water feature",        
+  "snow, snow cover, frozen precipitation",                  
+  "clear-cut, deforested area, logged land",             
+  "mixed, combined vegetation, diverse cover",                 
+  "ligneous, woody vegetation, wood plants",             
+  "greenhouse, glasshouse, protected cultivation",           
+  "other, miscellaneous, unclassified"                 
+]

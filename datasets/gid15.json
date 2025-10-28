@@ -1,0 +1,18 @@
+[
+    "background, empty space, blank area",
+    "industrial land, factory, industrial area",
+    "urban residential, architecture, apartment",
+    "rural residential, village, countryside house",
+    "traffic land, road, street",
+    "paddy field, rice paddy, flooded field",
+    "irrigated land, watered cropland, irrigated field",
+    "dry cropland, non-irrigated field, farmland",
+    "garden plot, vegetable garden, orchard",
+    "arbor woodland, forest, trees",
+    "shrub land, bushes, low vegetation",  
+    "natural grassland, prairie, pasture",
+    "artificial grassland, lawn, sports field",
+    "river, stream, waterway",
+    "lake, large water body, reservoir",
+    "pond, small water body, pool"
+]
