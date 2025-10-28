@@ -113,5 +113,7 @@ If you find this repository useful for your research, please cite our paper:
 }
 ```
 
----
+## Acknowledgements 
+This codebase is heavily borrowed from [CAT-Seg](https://github.com/cvlab-kaist/CAT-Seg). We sincerely thank the authors for their valuable efforts.
+
 
