@@ -3,7 +3,13 @@ This is a repository for releasing a PyTorch implementation of our work [TPOV-Se
 
 
 ## ⚙️ Installation
-
+- Linux or macOS with Python ≥ 3.8
+- PyTorch ≥ 1.13 is recommended and [torchvision](https://github.com/pytorch/vision/) that matches the PyTorch installation.
+  Install them together at [pytorch.org](https://pytorch.org) to make sure of this. Note, please check
+  PyTorch version matches that is required by Detectron2.
+- Detectron2: follow [Detectron2 installation instructions](https://detectron2.readthedocs.io/tutorials/install.html).
+- OpenCV is optional but needed by demo and visualization
+- `pip install -r requirements.txt`
 
 ```bash
 # 1. Create and activate a conda environment (example with Python 3.10)
@@ -16,7 +22,6 @@ cd TPOVseg
 
 # 3. Install Python dependencies
 pip install --upgrade pip
-Detectron2: follow [Detectron2 installation instructions](https://detectron2.readthedocs.io/tutorials/install.html).
 conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.7 -c pytorch -c nvidia
 pip install -r requirements.txt
 ```
