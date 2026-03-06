@@ -114,7 +114,7 @@ If you find this repository useful for your research, please cite our paper:
   publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
   author = {Zhang,  Xiaokang and Zhou,  Chufeng and Huang,  Jianzhong and Zhang,  Lefei},
   year = {2025},
-  pages = {1–1}
+  pages = {1–17}
 }
 ```
 
