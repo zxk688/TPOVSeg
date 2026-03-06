@@ -1,7 +1,7 @@
 # TPOV-Seg [IEEE TGRS 2025]
 This is a repository for releasing a PyTorch implementation of our work [TPOV-Seg: Textually Enhanced Prompt Tuning of Vision-Language Models for Open-Vocabulary Remote Sensing Semantic Segmentation](https://ieeexplore.ieee.org/document/11215798) accepted for publication in IEEE TGRS.
 
-
+![Framework](fig.png)
 ## ⚙️ Installation
 - Linux or macOS with Python ≥ 3.8
 - PyTorch ≥ 1.13 is recommended and [torchvision](https://github.com/pytorch/vision/) that matches the PyTorch installation.
